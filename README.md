@@ -7,7 +7,7 @@ This is repository with the code used to generate synthetic microbiological data
 - Then, set up environment (we recommend conda, and python 3.7) -- see requirements.txt.
 
 #### Usage:
-This process consists of two parts: (1) extracting colonies from real images, and (2) generate synthetic images using the extracted colonies and apply style transfer.
+The process consists of two parts: (1) extracting colonies from real images, and (2) generate synthetic images using the extracted colonies and apply style transfer.
 - to extact microbial colonies from the input images of Petri dish:
 ```bash
 python get_patches.py -i ./input_data -o ./colonies
