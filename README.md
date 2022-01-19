@@ -24,7 +24,7 @@ python grow_colonies.py -c ./colonies -e ./empty_dishes -s ./style_dishes -o ./g
 ```
 
 #### Notes:
-- labels for the each generated patch are stored in *.json file in COCO format,
+- labels for the each generated patch are stored in *.json file in the COCO format,
 - instance segmentation masks are stored in .npy files,
 - it is important to use scikit-image in version 0.17.2,
 - style transfer part is based on the repository provided in [3],
