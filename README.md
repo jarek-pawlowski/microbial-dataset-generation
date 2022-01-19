@@ -7,7 +7,7 @@ This is repository with the code used to generate synthetic microbiological data
 - Then, set up environment (we recommend conda, and python 3.7) -- see requirements.txt.
 
 #### Usage:
-This process consists of two parts: (1) extracting colonies from real images, and (2) generate synthetic images using the extracted colonies and apply style transfer.
+The process consists of two parts: (1) extracting colonies from real images, and (2) generate synthetic images using the extracted colonies and apply style transfer.
 - to extact microbial colonies from the input images of Petri dish:
 ```bash
 python get_patches.py -i ./input_data -o ./colonies
@@ -24,10 +24,10 @@ python grow_colonies.py -c ./colonies -e ./empty_dishes -s ./style_dishes -o ./g
 ```
 
 #### Notes:
-- labels for the each generated patch are stored in *.json file in COCO format
-- instance segmentation masks are stored in .npy files
-- it is important to use scikit-image in version 0.17.2
-- style transfer part is based on the repository provided in [3]
+- labels for the each generated patch are stored in *.json file in COCO format,
+- instance segmentation masks are stored in .npy files,
+- it is important to use scikit-image in version 0.17.2,
+- style transfer part is based on the repository provided in [3],
 - if you find this repository useful, please cite us :)
 
 #### Literature:
