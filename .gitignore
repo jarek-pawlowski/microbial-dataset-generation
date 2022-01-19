@@ -1,0 +1,10 @@
+__pycache__
+input_data/
+empty_dishes/
+style_dishes/
+colonies/
+generated/
+old/
+*.txt
+*.jpg
+*.csv
