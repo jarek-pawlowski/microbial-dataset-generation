@@ -253,7 +253,7 @@ def style_transfer(content_image, style_image, previous_model):
                      'conv5_1': 1.6} # 1.6
 
     content_weight = 150
-    style_weight = 0.7  # 0.5-5
+    style_weight = 0.5  # 0.5-5
 
     optimizer = optim.Adam(style_net.parameters(), lr=5e-3) # 5e-3
     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=200, gamma=0.9)
