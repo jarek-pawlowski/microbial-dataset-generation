@@ -3,7 +3,7 @@
 This is repository with the code used to generate synthetic microbiological dataset in the paper "Generation of microbial colonies dataset with deep learning style transfer" [1]. During generation we use images from AGAR [2] -- recently introduced large microbiological dataset.
 
 #### Prerequisites:
-- Before synthesis one has to download the input data. We used 100 images from the _higher-resolution_ AGAR subset -- it can be downloaded [here](https://link-url-here.org) together with the images containing empty dishes (on which colonies will be placed) + images that carries style (used to style transfer).
+- Before synthesis one has to download the input data. We used 100 images from the _higher-resolution_ AGAR subset -- it can be downloaded [here](https://drive.google.com/file/d/1ZJ-_jrvZRoLxAKQBW4r9yuCzokV_tC8_/view?usp=sharing) together with the images containing empty dishes (on which colonies will be placed) + images that carries style (used to style transfer).
 - Then, set up environment (we recommend conda, and python 3.7) -- see requirements.txt.
 
 #### Usage:
@@ -24,7 +24,7 @@ python grow_colonies.py -c ./colonies -e ./empty_dishes -s ./style_dishes -o ./g
 ```
 
 #### Notes:
-- labels for the each generated patch are stored in *.json file in COCO format,
+- labels for the each generated patch are stored in *.json file in the COCO format,
 - instance segmentation masks are stored in .npy files,
 - it is important to use scikit-image in version 0.17.2,
 - neural style transfer part is based on the repository provided in [3],
