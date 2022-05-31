@@ -76,7 +76,7 @@ class BasicBlock(nn.Module):
             residual = x
         else: 
             residual = self.shortcut(x)
-        out += residual
+        out = out + residual
         out = self.relu(out)
 
         return out
@@ -282,7 +282,7 @@ def style_transfer(content_image, style_image, previous_model):
 
             layer_style_loss = style_weights[layer] * torch.mean((target_gram_matrix - style_gram_matrix) ** 2)
             b, c, h, w = target_feature.shape
-            style_loss += layer_style_loss / (c * h * w)
+            style_loss = style_loss + layer_style_loss / (c * h * w)
         
         total_loss = content_weight * content_loss + style_weight * style_loss
         total_loss_epoch.append(total_loss)
