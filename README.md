@@ -31,7 +31,7 @@ python grow_colonies.py -c ./colonies -e ./empty_dishes -s ./style_dishes -o ./g
 - if you find this repository useful, please cite us :)
 
 #### Literature:
-[1] Pawłowski, J., Majchrowska, S., & Golan, T. Generation of microbial colonies dataset with deep learning style transfer. arXiv preprint arXiv:2111.03789 (2021).\
-[2] Majchrowska, S. et al. AGAR a microbial colony dataset for deep learning detection. arXiv preprint arXiv:2108.01234 (2021).\
-[3] Li, M., Ye, C. & Li, W. High-resolution network for photorealistic style transfer. arXiv preprint arXiv:1904.11617 (2019).
+[1] J. Pawłowski, S. Majchrowska, & T. Golan, Generation of microbial colonies dataset with deep learning style transfer, _Scientific Reports_ 12, 5212 (2022).\
+[2] S. Majchrowska et al., AGAR a microbial colony dataset for deep learning detection, arXiv preprint: 2108.01234 (2021).\
+[3] M. Li, C. Ye, & W. Li, High-resolution network for photorealistic style transfer, arXiv preprint: 1904.11617 (2019).
 
